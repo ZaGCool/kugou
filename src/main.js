@@ -5,6 +5,8 @@ import store from './store'
 
 // 导入一个样式初始化的文件
 import './assets/base.css'
+// 引入mintui的基础样式
+import 'mint-ui/lib/style.css'
 
 Vue.config.productionTip = false
 

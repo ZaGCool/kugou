@@ -3,8 +3,15 @@
       <!-- 头部区域 -->
       <div class="header">
         <!-- 最顶部区域 -->
+        <mt-header title="">
+        <router-link to="/" slot="left">
+          <mt-button class="logo_icon"></mt-button>
+        </router-link>
+        <mt-button icon="search" slot="right"></mt-button>
+      </mt-header>
         <!-- 导航区域 -->
         <!-- 准备具名路由视图 -->
+       
         <router-view name="navBar"></router-view>
       </div>
       <!-- 主体区域 -->
@@ -15,7 +22,11 @@
   </div>
 </template>
 <script>
+import Vue from 'vue'
+import { Header,Button } from 'mint-ui';
 
+Vue.component(Header.name,Header)
+Vue.component(Button.name,Button)
 export default {
   
   async created(){
@@ -28,4 +39,21 @@ export default {
 
 }
 </script>
+<style lang="less">
+
+    .header {
+
+      .logo_icon {
+        width: 5.1rem;
+        height: 1.2rem;
+        background:url(./assets/img/logo.png) no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .mintui {
+        font-size: 1rem;
+      }
+    }
+  
+</style>
 

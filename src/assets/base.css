@@ -1,0 +1,83 @@
+/* 这是一个样式初始化文件 */
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    /* 把一些空间的默认外部设置为无 */
+    appearance: none;
+    /* 设置盒模型  */
+    box-sizing: border-box;
+}
+
+html {
+    /* rem  vw: 这个尺寸根据当前屏幕宽度变化而变化
+    100vw: 一个屏幕宽  50vw   320px   1vw: 3.2px
+    20/3.2 
+    */
+    font-size: 6.25vw;
+}
+
+body {
+    font-size: 14px;
+    color: #333;
+    font-family: 'Microsoft Yahei';
+}
+
+a {
+    /* 移动端点击链接默认高亮显示 */
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+strong,
+b {
+    font-weight: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+
+/* 定义一些公用的类 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}

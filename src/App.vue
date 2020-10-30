@@ -11,6 +11,7 @@
         </mt-header>
         <!-- 导航区域 -->
         <!-- 准备具名路由视图 -->
+       
         <router-view name="navBar"></router-view>
       </div>
       <!-- 主体区域 -->

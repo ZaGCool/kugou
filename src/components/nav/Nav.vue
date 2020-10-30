@@ -1,12 +1,35 @@
 <template>
   <div>
-    <h3>我是Nav导航组件</h3>
+   <mt-navbar v-model="selected">
+      <mt-tab-item :id="item.name"
+      v-for="item in navs"
+      :key="item.name"
+      @click.native="gotoCom(item)"
+      >{{item.meta.title}}</mt-tab-item>
+    
+    </mt-navbar>
   </div>
 </template>
 
 <script>
-export default {
+import navs from '@/router/nav.js'
+import Vue from 'vue'
+import { Navbar, TabItem } from 'mint-ui';
 
+Vue.component(Navbar.name, Navbar);
+Vue.component(TabItem.name, TabItem);
+export default {
+  data(){
+    return {
+      navs,
+      selected: "newsong"
+    }
+  },
+  methods: {
+    gotoCom(item) {
+      this.$router.push({'name': item.name})
+    }
+  }
 }
 </script>
 

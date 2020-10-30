@@ -19,6 +19,9 @@ import Nav from '@/components/nav/Nav'
 const navs = [{
         path: '/',
         name: "newsong",
+        meta: {
+            title: "新歌"
+        },
         components: {
             default: NewSong,
             navBar: Nav
@@ -27,6 +30,9 @@ const navs = [{
     {
         path: '/rank',
         name: "rank",
+        meta: {
+            title: "排行"
+        },
         components: {
             default: Rank,
             navBar: Nav
@@ -35,6 +41,9 @@ const navs = [{
     {
         path: '/plist',
         name: "plist",
+        meta: {
+            title: "歌单"
+        },
         components: {
             default: Plist,
             navBar: Nav
@@ -43,6 +52,9 @@ const navs = [{
     {
         path: '/singer',
         name: "singer",
+        meta: {
+            title: "歌手"
+        },
         components: {
             default: Singer,
             navBar: Nav

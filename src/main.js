@@ -6,6 +6,9 @@ import store from './store'
 // 导入一个样式初始化的文件
 import './assets/base.css'
 
+// 导入mintui的css
+import 'mint-ui/lib/style.css'
+
 Vue.config.productionTip = false
 
 // let iw = document.documentElement.clientWidth;

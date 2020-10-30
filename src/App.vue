@@ -46,6 +46,12 @@ export default {
 <style lang="less">
 
     .header {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 4.3rem;
+      z-index: 2;
       .mint-header {
 
         .logo_icon {
@@ -55,6 +61,9 @@ export default {
           background-size: 100% 100%;
         }
       }
+    }
+    .container {
+      margin-top: 4.5rem;
     }
   
 </style>
